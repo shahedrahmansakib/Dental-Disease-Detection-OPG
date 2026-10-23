@@ -36,12 +36,13 @@ The dataset comprises cropped dental OPG images categorized into **5 major clini
 
 ## 📊 Experimental Results
 
-### 1. Model Performance Comparison
-| Model | Train Acc (%) | Val Acc (%) | Test Acc (%) | Mean FPR |
-| :--- | :---: | :---: | :---: | :---: |
-| **DenseNet121** | 87.05 | 87.34 | 86.65 | 0.0407 |
-| **ConvNeXtTiny** | 80.15 | 84.96 | 86.13 | 0.0392 |
-| **ResNet50** | 91.80 | 87.60 | 85.60 | 0.0405 |
+### 1. Model Performance Comparison Table
+| Model | Train Acc (%) | Val Acc (%) | Test Acc (%) | Macro ROC-AUC | Mean FPR |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **EfficientNetV2S (Proposed Base Model)** | **89.82**[cite: 25] | **88.92**[cite: 25] | **89.01**[cite: 25] | **0.9832**[cite: 25] | **0.0333**[cite: 25] |
+| **DenseNet121** | 87.05 | 87.34 | 86.65 | - | 0.0407 |
+| **ConvNeXtTiny** | 80.15 | 84.96 | 86.13 | - | 0.0392 |
+| **ResNet50** | 91.80 | 87.60 | 85.60 | - | 0.0405 |
 
 ### 2. Evaluation Metrics
 - **Macro ROC-AUC:** Up to `0.9832` across classes.
