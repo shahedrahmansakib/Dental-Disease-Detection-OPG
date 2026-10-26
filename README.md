@@ -13,16 +13,18 @@ Accurate automated diagnosis from dental X-rays remains critical due to inter-cl
 
 ---
 
-## 🗂️ Dataset & Class Distribution
-The dataset comprises cropped dental OPG images categorized into **5 major clinical classes** (Total Images: 2,529):
-1. **Crown** (392 images)
-2. **Healthy** (55 images - *Boosted via Class Weighting*)
-3. **Missing Teeth** (321 images)
-4. **Root Canal Treatment (RCT)** (1195 images)
-5. **Root Piece** (566 images)
+## 🗂️ Primary Dataset & Clinical Collection
+Unlike standard benchmark repositories, the OPG radiographs used in this research comprise a **primary dataset personally collected and curated directly from Dhaka Dental College Hospital in Bangladesh**. 
 
-- **Data Splitting:** Physical stratified splitting with `70% Train`, `15% Validation`, and `15% Test`.
-- **Resolution:** Standardized at `384x384` pixels with advanced data augmentation.
+The dataset consists of **2,529 cropped dental OPG images** rigorously categorized into **5 major clinical classes**.
+1. **Crown:** 392 images
+2. **Healthy:** 55 images (*Optimized via Class Weighting*)
+3. **Missing Teeth:** 321 images
+4. **Root Canal Treatment (RCT):** 1,195 images
+5. **Root Piece:** 566 images
+
+- **Data Partitioning:** Stratified splitting with `70% Train (1,768 images)`, `15% Validation (379 images)`, and `15% Test (382 images)`.
+- **Standardization:** All images are preprocessed and standardized at `384x384` pixels with advanced data augmentation to ensure robust model generalizability.
 
 ---
 
